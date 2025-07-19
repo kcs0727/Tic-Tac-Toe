@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(114, 92, 173);
+    text-align: center;
+}
+
+/* message box for congratulations */
+.msgbox{
+    width: 40vw;
+    margin: 15px 0px 30px 30vw ;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: white;
+    color: green;
+    border:2px solid rgb(0, 255, 191);
+    border-radius: 10px;
+}
+
+h1{
+    margin-top: 15px;
+    color: rgb(255, 183, 74);
+}
+
+/* game container */
+.container{
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    height: 30%;
+    width: 30%;
+    border: none;
+    border-radius: 10%;
+    background-color: rgb(253, 249, 249);
+    color:rgb(0, 153, 255);
+    font-size: 500%;
+    cursor: pointer;
+}
+
+.box:disabled{
+    background-color: rgb(207, 204, 204);
+}
+
+/* reset button */
+.btn{
+    background-color:rgb(190, 149, 88);
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: 2px solid transparent; 
+    cursor:pointer
+}
+
+.btn:active{
+    border:2px solid rgb(254, 222, 222);
+    background-color:rgb(197, 141, 57);
+}
+
+/* score board */
+.scorebox{
+    margin-top:20px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+.score{
+    width: 30vh;
+    background-color: rgb(194, 173, 173);
+    border:2px solid black;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+#new{
+    grid-column: 1/3;    
+}
+.names{
+    font-size: 1.25rem;
+}
+.scores{
+    font-size: 1.25rem;
+}
+
+/* dailgue box */
+.dail-box{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.dail-box button:active{
+    border: 1px solid black;
+    background-color:rgb(197, 141, 57);
+}
+
+/* prompt */
+.prompt-content {
+  background: white;
+  color:rgb(2, 153, 153);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+}
+
+.prompt-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.prompt-content button {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgb(190, 149, 88);
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+/* confirm*/
+.confirm-content {
+  background: white;
+  color:rgb(2, 153, 153);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+}
+
+.confirm-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.confirm-content button {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgb(190, 149, 88);
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+
+.hide{
+    display: none;
+}

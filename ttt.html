@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="ttt2.css">
+</head>
+
+<body>
+    <div class="hide dail-box" id="promptBox">
+        <div class="prompt-content">
+            <p>Who will start first? X or O:</p>
+            <button>X</button>
+            <button>O</button>
+        </div>
+    </div>
+    <div class="hide dail-box" id="confirmBox">
+        <div class="confirm-content">
+            <p>Do you want to reset the scoreboard and start new game?</p>
+            <button>Yes</button>
+            <button>Cancel</button>
+        </div>
+    </div>
+
+
+    <p class="msgbox hide"></p>
+    <h1>TIC TAC TOE</h1>
+    <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+    </div>
+    
+    <button class="btn" id="reset">Reset</button>
+
+    <div class="scorebox">
+        <div class="score">
+            <span class="names" id="pX">Player X:</span>
+            <span class="scores" id="pXscore">0</span>
+            <span class="names" id="pO">Player O:</span>
+            <span class="scores" id="pOscore">0</span>
+            <button class="btn" id="new">New Game</button>
+        </div>
+    </div>
+
+    <script src="ttt3.js"></script>
+</body>
+
+</html>
